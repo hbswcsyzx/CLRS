@@ -1,6 +1,6 @@
-\# = important
+Notations: \# = important ; \* = challenging
 
-\* = challenging
+Thanks to: [SORT VISUALIZER](https://sortvisualizer.com/) ; [latex 公式编辑器](https://www.latexlive.com/)
 
 ## Preface
 
@@ -32,12 +32,16 @@
 ### Problems
 
 1. [Bubblesort](code/Chapter2/Problems/2-2_bubblesort.c)
-2. [Horner's Rule](code/Chapter2/Problems/2-3_horner'sRule.c)
+2. [Evaluate Polynomial](code\Chapter2\Problems\2-3_evaluatePolynomial.c)
 3. \* [Count Inversions](code/Chapter2/Problems/2-4_countInversions.c)
 
 ## Chapter 3 : $Characterizing ~ Running ~ Times$
 
 [Notes](notes/Chapter3.md) & [Solutions](code/Chapter3/)
+
+## Chapter 4 : $Divide-and-Conquer$
+
+[Notes](notes/Chapter4.md) & [Solutions](code/Chapter4/)
 
 ### Text
 

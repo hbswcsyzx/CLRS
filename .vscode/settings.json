@@ -1,0 +1,6 @@
+{
+  // 基础字体设置
+  "markdown.preview.fontFamily": "'Times New Roman', SimSun, serif",
+  "markdown.preview.fontSize": 16,
+  
+}

@@ -1,4 +1,4 @@
-## $Mathematical~Induction$ & $Loop~Invariant$ <br>数学归纳法与循环不变量
+## $Mathematical ~ Induction$ & $Loop ~ Invariant$ <br>数学归纳法与循环不变量
 
 以插入排序 _Insertion sort_ 为例
 
@@ -14,7 +14,7 @@
 
    即将插入不存在的第 n + 1 张牌时，循环显然要终结，而由第二步得，相对于第 n+1 张而言，前 n 张已然有序，即原数组已然完成排序。证毕。
 
-## $Incremental$ method <br>递增法 (?)
+## $Incremental$ method <br>递增法$^?$
 
 For each element _A[i]_, insert it into its proper place in the subarray _A[1:i]_, having already sorted the subarray _A[1:i-1]_.
 
