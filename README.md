@@ -15,4 +15,4 @@
 
 也可从 [resources](resources/) 文件夹中下载与 CRLS_4e 相关的资源
   
-    为什么叫 [CLRS](notes/0preface.md) ？
+(为什么叫 [CLRS](notes/0preface.md) ?)
