@@ -13,6 +13,6 @@
 
 可以从 [index](index.md) 中检索所有章节与所有代码
 
-也可从 [resources](resources/) 文件夹中下载与 CRLS_4e 相关的资源
+也可从 [resources](resources/) 文件夹中下载与 CLRS_4e 相关的资源
   
 (为什么叫 [CLRS](notes/0preface.md) ?)
