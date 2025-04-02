@@ -52,7 +52,7 @@ Thanks to: [SORT VISUALIZER](https://sortvisualizer.com/) ; [latex 公式编辑�
 
 ### Ecercises
 
-1. \*\*\*[Strassen’s algorithm for matrix multiplication](code/Chapter4/Exercises/4.2-2_Strassen.c)
+1. \*\*\*[Strassen Matrix Multiplication](code/Chapter4/Exercises/4.2-2_Strassen.c)
 
 ### Problems
 
@@ -61,6 +61,30 @@ Thanks to: [SORT VISUALIZER](https://sortvisualizer.com/) ; [latex 公式编辑�
 # Part &#8545; _Sorting and Order Statistics_
 
 # Part &#8546; _Data Structure_
+
+## Chapter 10 : $Elementary ~ Data ~ Structures$
+
+[Notes](notes/Chapter10.md) & [Solutions](code/Chapter10/)
+
+### Text
+
+1. [Stack](code/Chapter10/Text/10.1.1_lifoStack.c)
+2. [Queue](code/Chapter10/Text/10.1.2_fifoQueue.c)
+3. [Doubly Linked List](code/Chapter10/Text/10.2.1_doublyLinkedList.c)
+4. [DLL with Sentinel](code/Chapter10/Text/10.2.2_dllSentinel.c)
+
+### Ecercises
+
+1. [List Reverse](code/Chapter10/Exercises/10.2-5_listReverse.c)
+2. \*[DLL with Singleptr and XOR](code/Chapter10/Exercises/10.2-6_DLLwithXORandSingleptr.c)
+3. [Print Binary Tree](code/Chapter10/Exercises/10.3-2_printBinaryTree.c)
+4. \#[Print Binary Tree Nonrecursive](code/Chapter10/Exercises/10.3-3_printBinaryTreeNonrecursive.c)
+5. [Print Unbounded Degree Tree](code/Chapter10/Exercises/10.3-4_printUnboundedDegreeTree.c)
+6. \*\*[Print Binary Tree Constant Extra Space](code/Chapter10/Exercises/10.3-5_printBinaryTreeConstantExtraSpace.c)
+
+### Problems
+
+1. \*[Compact List (array) Search](code/Chapter10/Problems/10-3_compactListSearch.c)
 
 # Part &#8547; _Advanced Design and Analysis Techniques_
 

@@ -120,4 +120,4 @@ void mergeSort(int arr[], int l, int r)
 
 ### 理解时间复杂度 $O$$(n$log$n)$
 
-_recursion tree_ 如图 ![2.1](../imgs/2.1.png)
+_recursion tree_ 如图 ![2.1](../imgs/Ch2/2.1.png)

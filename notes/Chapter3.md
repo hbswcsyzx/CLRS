@@ -26,7 +26,7 @@ $\Theta$-notation characterizes a _tight bound_ on the asymptotic behavior of a 
 
 前提条件：所有函数非负
 
-![3.1](../imgs/3.1.png)
+![3.1](../imgs/Ch3/3.1.png)
 
 1. ### $O$-notation
 
@@ -122,7 +122,7 @@ $\widetilde{O}~O^{'}~\overset{\infty}{\Omega}~\widetilde{\Omega}~\widetilde{\The
 
 一些细则详见原书，日常情况就运用你的“计算机直觉”吧。<br>—— Just focus on what really matters.
 
-![3.2](../imgs/3.2.png)
+![3.2](../imgs/Ch3/3.2.png)
 
 ## $Math$
 
@@ -164,7 +164,7 @@ $\widetilde{O}~O^{'}~\overset{\infty}{\Omega}~\widetilde{\Omega}~\widetilde{\The
 6.  ### _Logarithms_ 对数函数
 
     定义如下
-    <!-- ![3.3](../imgs/3.3.png) -->
+    <!-- ![3.3](../imgs/Ch3/3.3.png) -->
 
     $$
     \begin{align*}
@@ -176,7 +176,7 @@ $\widetilde{O}~O^{'}~\overset{\infty}{\Omega}~\widetilde{\Omega}~\widetilde{\The
     $$
 
     运算性质如下
-    <!-- ![3.4](../imgs/3.4.png) -->
+    <!-- ![3.4](../imgs/Ch3/3.4.png) -->
 
     $$
     \begin{align*}
@@ -235,7 +235,7 @@ $\widetilde{O}~O^{'}~\overset{\infty}{\Omega}~\widetilde{\Omega}~\widetilde{\The
 
     一般迭代函数见 Problem [3-7](../code/Chapter3/Problems/3-7.md)
 
-10. ### Fibonacci numbers
+10. ### _Fibonacci numbers_ 斐波那契数列
 
     $$
     F_i =
