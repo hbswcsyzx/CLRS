@@ -1,6 +1,6 @@
 Notations: \# = important ; \* = challenging
 
-Thanks to: [SORT VISUALIZER](https://sortvisualizer.com/) ; [latex 公式编辑器](https://www.latexlive.com/) ; [symbl](https://symbl.cc/)
+Thanks to: [SORT VISUALIZER](https://sortvisualizer.com/) ; [latex 公式编辑器](https://www.latexlive.com/) ; [Ujimatsu Chiya](https://ujimatsu-chiya.github.io/Introduction-To-Algorithms-4th-Edition/)
 
 ## Preface
 

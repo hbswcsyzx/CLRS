@@ -62,7 +62,7 @@
     三点心得：
 
     - 猜出函数后的证明就像数分中的一些极限相关证明，$n_{\scriptscriptstyle 0}$ 是 $N$，$c$ 是 $\varepsilon$ 。而这种题主打一个（在草稿纸上）先写出关系再设定参数范围。
-    - 对于简单的递推式，其实可以换元，例如上式可以设 $T(n)=2^k$ 。
+    - 对于简单的递推式，其实可以换元 (Problem 4-3) ，例如上式可以设 $T(n)=2^k$ 。
     - 猜出函数的主体后，一些 lower terms 低阶项其实就是待定系数法。更多例题详见 Exercises
 
     两点陷阱：
@@ -118,4 +118,7 @@
 
     详见[知乎](https://zhuanlan.zhihu.com/p/542523546)（太干了）
 
-<br><br><br><div style="color: grey; text-align: center; font-size:14px">第四章真干啊，又是 Strassen 又是主定理和 Akra-Bazzi <br>果然还是要学好数学啊</div>
+<br><br>
+&#8195;&#8195;另外，有关斐波那契数列 (Fibonacci numbers) 和蒙赫阵列 (monge array) 的探究见 Problems。答案见[这里](https://ujimatsu-chiya.github.io/INTRODUCTION-TO-ALGORITHMS/4-Problems/#section-4)
+
+<br><br><br><div style="color: grey; text-align: center; font-size:14px">第四章真干啊，又是 Strassen 又是主定理和 Akra-Bazzi <br> 果然还是要学好数学啊 <br> 另外建议阅读本章的 Chapter notes，了解更多历史</div>
