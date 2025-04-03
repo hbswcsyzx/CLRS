@@ -51,7 +51,7 @@
 
     示例如图：
 
-    &#8195;&#8195;&#8194; $T(n)=2T(\lfloor n/2\rfloor)+\Theta(n)$ ，猜测 $T(n)=O(n\lg n)$ ，然后套用大 O 的定义，设定 $n_{\scriptsize 0}$ 和常数 $c$ ，当 $n>2n_{\scriptsize 0}$ 时，有 ![4.3](../imgs/Ch4/4.3.png) （一般来说证道这里就行了，但这版算法导论更加严谨）![4.4](../imgs/Ch4/4.4.png)
+    &#8195;&#8195;&#8194; $T(n)=2T(\lfloor n/2\rfloor)+\Theta(n)$ ，猜测 $T(n)=O(n\lg n)$ ，然后套用大 O 的定义，设定 $n_{\scriptsize 0}$ 和常数 $c$ ，当 $n>2n_{\scriptsize 0}$ 时，有 ![4.3](../imgs/Ch4/4.3.png) （一般来说证到这里就行了，但这版算法导论更加严谨）![4.4](../imgs/Ch4/4.4.png)
 
     两点技巧：
 
@@ -76,7 +76,7 @@
 
 3.  ### _Master method_ 主定理法$^?$ <span id=mst></span>
 
-    我们发现，递归式可以有相似的形式，于是可以用主定理解形如 $T(n)=aT(n/b)+f(n)$ (a>0, b>1) 的递归式，其中整个递推式称为 **_master recurrence_** 主递推式， $f(n)$ 称为 _**driving function**_ 驱动函数，涵盖了驱动问题解决所必须和的分隔和合并操作。值得一提的是，之前我们一直默认每一层的 n 都为整数 (floor and ceiling) ，但主定理隐式这样处理了 n。
+    我们发现，递归式可以有相似的形式，于是可以用主定理解形如 $T(n)=aT(n/b)+f(n)$ (a>0, b>1) 的递归式，其中整个递推式称为 **_master recurrence_** 主递推式， $f(n)$ 称为 _**driving function**_ 驱动函数，涵盖了驱动问题解决所必须和的分隔和合并操作。值得一提的是，之前我们一直默认每一层的 n 都为整数 (after floor and ceiling) ，但主定理隐式这样处理了 n。
 
     为了运用主定理法，首先引入主定理。
 
@@ -84,22 +84,22 @@
 
     1. If there exists a constant $\epsilon>0$ such that $f(n)=O\left(n^{\log _{b} a-\epsilon}\right)$ , then $T(n)= \Theta\left(n^{\log _{b} a}\right)$ .
     2. If there exists a constant $k \geqslant 0$ such that $f(n)=\Theta\left(n^{\log _{b} a} \lg ^{k} n\right)$ , then $T(n)= \Theta\left(n^{\log _{b} a} \lg ^{k+1} n\right)$ .
-    3. If there exists a constant $\epsilon>0$ such that $f(n)=\Omega\left(n^{\log \_{b} a+\epsilon}\right)$ , and if $f(n)$ additionally satisfies the regularity condition $af(n/b) \leq c f(n)$ for some constant $c<1$ and all sufficiently large $n$ , then $T(n)=\Theta(f(n))$ .
+    3. If there exists a constant $\epsilon>0$ such that $f(n)=\Omega\left(n^{\log _{b} a+\epsilon}\right)$ , and if $f(n)$ additionally satisfies the regularity condition $af(n/b) \leqslant c f(n)$ for some constant $c<1$ and all sufficiently large $n$ , then $T(n)=\Theta(f(n))$ .
 
-    理解：
+    理解：（证明详见[知乎](https://zhuanlan.zhihu.com/p/529434777)）
 
     &#8195;&#8195;&#8194;$n^{\log_b a}$ 称为分水岭函数，将 $f(n)$ 与之比较，分出了上述三类。
 
     case 1.
 
-    - &#8195;&#8195;在 $n^{\log_b a}$ 比 $f(n)$ 增长快得不仅 asymptotically （在远处更大，但是仅仅是宽泛的更大，大多少不确定）， 而且 **polynomially** ——增长速度的差异可用一个多项式因子 $\Theta(n^\epsilon)$ 描述，$\epsilon$ 不需要多大，但一定要有。
+    - &#8195;&#8195; $n^{\log_b a}$ 比 $f(n)$ 增长快得不仅 asymptotically （在远处更大，但是仅仅是宽泛的更大，大多少不确定）， 而且 **polynomially** ——增长速度的差异可用一个多项式因子 $\Theta(n^\epsilon)$ 描述，$\epsilon$ 不需要多大，但一定要有。
     - &#8195;&#8195;此时，通过观察递归树我们会发现，从根到叶每一层至少都是几何增长 **geometrically** （等比数列），使得叶子层的总时长远大于 (dominantes) 中间节点的总和。
 
     ![4.7](../imgs/Ch4/4.7.png)
 
     case 2.
 
-    - &#8195;&#8195;分水岭函数与驱动函数增长得近似相等$^?$，但具体来说驱动函数比分水岭函数 $n^{\log_ba}$ 增长得多 $\Theta (\lg^k n)$ ，其中 k 非负。此时给 $f(n)=n^{\log_ba} \cdot \lg^kn$ 再叠加上一个 $\lg n$ 就是答案 $T(n)=\Theta(n^{\log_ba} \lg^{k+1}n)$ 。
+    - &#8195;&#8195;分水岭函数与驱动函数增长得近似相等$^?$，但具体来说驱动函数比分水岭函数 $n^{\log_ba}$ 增长得快 $\Theta (\lg^k n)$ ，其中 k 非负。此时给 $f(n)~(=n^{\log_ba} \cdot \lg^kn)$ 再叠加上一个 $\lg n$ 就是答案 $T(n)=\Theta(n^{\log_ba} \lg^{k+1}n)$ 。
     - &#8195;&#8195;此时，我们发现，递归树每一层的耗时大致相同—— $\Theta(n^{\log_ba}\lg^kn)$ ——且共有 $\Theta(\lg n)$ 层。
     - &#8195;&#8195;情形 2 最常见的情况是 $k=0$ 。
 
@@ -107,10 +107,15 @@
 
     case 3.
 
-    - &#8195;&#8195;与情形 1 相对，驱动函数比分水岭函数快出一个多项式量级，且还要满足一个正则条件 (regularity condition) $af(n/b)\leqslant cf(n)$ ——大多数情形 3 的驱动函数都满足，但存在例外，见 Exercise [4.5-5](../code/Chapter4/Exercises/4.5-5.md)
+    - &#8195;&#8195;与情形 1 相对，驱动函数比分水岭函数快出一个多项式量级，且还要满足一个正则条件 (regularity condition) $~af(n/b)\leqslant cf(n)$ ——大多数情形 3 的驱动函数都满足，但存在例外，见 Exercise [4.5-5](../code/Chapter4/Exercises/4.5-5.md)
     - &#8195;&#8195;此时，从根到叶每层都几何衰减，使得根层主导总用时。
 
     ![4.9](../imgs/Ch4/4.9.png)
 
-<br><br><br><div style="color: grey; text-align: center; font-size:14px">个人认为这本书写的真好，真有结构，循循善诱，由浅入深。<br>
-同时覆盖广、讲解深，适合入门&#128514;</div>
+    注意，有些情况下主定理不适用，毕竟三种情况的涵盖范围还是不够全面，在 $f(n)\ll n^{\log_ba}$ 或 $f(n)\gg n^{\log_ba}$ 或 case 2 中的 k<0 等等情况下，主定理均不适用，此时只能用代换法或 Akra-Bazzi 等方法了。不过，主定理在绝大多数情况下都还是适用的。
+
+4.  ### _Akra-Bazzi method_
+
+    详见[知乎](https://zhuanlan.zhihu.com/p/542523546)（太干了）
+
+<br><br><br><div style="color: grey; text-align: center; font-size:14px">第四章真干啊，又是 Strassen 又是主定理和 Akra-Bazzi <br>果然还是要学好数学啊</div>
